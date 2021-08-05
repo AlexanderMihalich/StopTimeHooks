@@ -1,0 +1,89 @@
+.header {
+	z-index: 500;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: -webkit-linear-gradient(45deg, rgb(218, 104, 99) 5%, rgb(32, 50, 180) 93%);
+	background: -moz-linear-gradient(45deg, rgb(218, 104, 99) 5%, rgb(32, 50, 180) 93%);
+	background: linear-gradient(45deg, rgb(218, 104, 99) 5%, rgb(32, 50, 180) 93%);
+	margin: -5px 0px;
+	@media (max-width: 500px) {
+		padding: 5px 0px;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__stop {
+		display: flex;
+		white-space: nowrap;
+		text-transform: uppercase;
+		font-size: 45px;
+		font-family: "KlavikaMedium";
+		span {
+			display: block;
+			font-size: 40px;
+			margin: 0px 0px 10px 0px;
+		}
+		@media (max-width: 500px) {
+			font-size: 40px;
+			span {
+				font-size: 35px;
+			}
+		}
+	}
+	&__logo {
+		margin: 5px 0px 0px 0px;
+		color: #fff;
+		position: relative;
+		width: 120px;
+		sub {
+			position: absolute;
+			bottom: 2px;
+			right: 14px;
+			font-size: 14px;
+			margin: 0px 0px 5px 0px;
+		}
+	}
+	&__img {
+		margin: 2px 0px 0px 0px;
+		width: 40px;
+		@media (max-width: 500px) {
+			width: 38px;
+		}
+	}
+	&__login {
+		color: #fff;
+		font-size: 20px;
+		@media (max-width: 500px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 150px;
+			font-size: 17px;
+			span {
+				margin: 0px 0px 3px 0px;
+			}
+		}
+	}
+	&__rowUser {
+		display: flex;
+		align-items: center;
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
+	}
+	&__btn {
+		font-size: 12px;
+		text-transform: uppercase;
+		border-radius: 5px;
+		background-color: #e6eeea;
+		padding: 6px 15px;
+		color: #757575;
+		margin: 0px 0px 0px 10px;
+	}
+}

@@ -1,0 +1,30 @@
+.dialogs {
+	&__message {
+		padding: 13px 0px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: auto;
+	}
+	&__textarea {
+		margin: 10px 0px 0px 0px;
+		height: 70px;
+	}
+	&__add {
+		position: relative;
+	}
+	&__btn {
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 25px;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border-top: 5px solid transparent;
+			border-left: 15px solid #362e94;
+			border-bottom: 18px solid transparent;
+		}
+	}
+}

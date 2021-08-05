@@ -1,0 +1,102 @@
+@import-normalize;
+
+//<ПЕРЕМЕННЫЕ>=================================================
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 960;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 880;
+$md4: 479.98;
+$md5: 420;
+//</ПЕРЕМЕННЫЕ>================================================
+
+/* <ОБОЛОЧКА>=================================================== */
+body {
+	color: #000;
+	font-size: 15px;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+/* </ОБОЛОЧКА>=================================================== */
+
+/* <ОСНОВНАЯ СЕТКА>============================================= */
+._container {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px 10px;
+	// @media (max-width: $md1+px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
+}
+/* </ОСНОВНАЯ СЕТКА>============================================= */
+
+/* <ОСНОВНОЙ БЛОК>============================================== */
+.wrapper {
+	display: flex;
+}
+.page {
+	position: relative;
+	flex: 1 1 auto;
+	margin: 50px 0px 0px 0px;
+	&__content {
+		display: flex;
+	}
+}
+.background {
+	img {
+		position: relative;
+		width: 100%;
+		object-fit: cover;
+		height: 30vh;
+		z-index: 2;
+	}
+}
+
+.block {
+	margin: 15px 0px 100px 0px;
+	&_m {
+		margin: 10px 0px 100px 0px;
+	}
+	width: 80%;
+	z-index: 101;
+	@media (max-width: 1030px) {
+		width: 97%;
+	}
+	@media (max-width: 700px) {
+		width: 95%;
+	}
+}
+.title {
+	font-family: "ANTQUABI";
+	font-size: 30px;
+	margin: 0px 0px 15px 0px;
+	@media (max-width: 700px) {
+		font-size: 25px;
+	}
+}
+.textarea {
+	border-radius: 5px;
+	width: 100%;
+	background-color: rgb(246, 232, 255);
+	padding: 20px;
+	font-size: 15px;
+}
+/* </ОСНОВНОЙ БЛОК>============================================== */

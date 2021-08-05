@@ -1,0 +1,89 @@
+.users {
+	&__title {
+		font-size: 50px;
+		color: #3d3d3d;
+		margin: 30px 0px;
+	}
+	&__body {
+		min-height: 800px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+.user {
+	max-width: 380px;
+	margin: 10px;
+	@media (max-width: 480px) {
+		max-width: 100%;
+	}
+	&__background {
+		img {
+			width: 380px;
+			height: 130px;
+			object-fit: cover;
+			border-radius: 10px 10px 0px 0px;
+			@media (max-width: 480px) {
+				height: 100px;
+				width: 100%;
+			}
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		margin: 0px 0px 20px 0px;
+	}
+	&__ava img {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		border: 5px solid #fff;
+		object-fit: cover;
+		width: 100px;
+		margin: -70px 0px 0px 20px;
+	}
+	&__items {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		max-width: 255px;
+		margin: 0px 0px 15px 0px;
+		flex: 1 1 auto;
+		@media (max-width: 480px) {
+			max-width: 140px;
+		}
+	}
+	&__name {
+		text-transform: uppercase;
+		font-family: "ANTQUABI";
+		font-size: 24px;
+		margin: 0px 0px 10px 0px;
+	}
+	&__text {
+		word-wrap: break-word;
+	}
+	&__btns {
+		margin: 27px 0px 0px 0px;
+	}
+	&__btn {
+		border-radius: 5px;
+		padding: 8px 35px;
+		min-width: 130px;
+		background-color: #4c43aa;
+		color: #fff;
+		font-size: 15px;
+		&:hover {
+			background-color: #4137a6;
+		}
+		&_red {
+			background-color: #8f849d;
+			&:hover {
+				background-color: #887e96;
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.nav {
+	z-index: 120;
+	border-radius: 10px;
+	background: -webkit-linear-gradient(45deg, rgb(218, 104, 99), rgb(64, 60, 166) 80%);
+	background: -moz-linear-gradient(45deg, rgb(218, 104, 99), rgb(64, 60, 166) 80%);
+	background: linear-gradient(45deg, rgb(218, 104, 99), rgb(64, 60, 166) 80%);
+	margin: 20px 0px 20px auto;
+	width: 20%;
+	padding: 20px 20px 15px 30px;
+	height: 60vh;
+	transition: all 0.8s ease 0s;
+	@media (max-width: 1030px) {
+		width: 220px;
+		top: 60px;
+		height: 85%;
+		position: fixed;
+		right: -800px;
+		&._active {
+			right: 3px;
+		}
+	}
+	@media (max-width: 480px) {
+		width: 97%;
+		margin: 10px 5px;
+		&._active {
+			right: 0;
+		}
+	}
+	ul {
+		margin: 0px 0px 80px 0px;
+	}
+	a {
+		display: block;
+		padding: 13px 0px;
+		font-size: 25px;
+		color: #fff;
+		cursor: pointer;
+		&.nav_active {
+			color: rgba(255, 255, 255, 0.575);
+		}
+	}
+	&__settings {
+		margin: 25px 0px 0px 0px;
+	}
+	&__title {
+		font-size: 30px;
+		color: #fff;
+		margin: 50px 0px 20px 0px;
+	}
+	&__array {
+		z-index: 300;
+		position: fixed;
+		right: 18px;
+		top: 50%;
+		display: none;
+		transform: rotate(180deg);
+		transition: all 0.4s ease 0s;
+		@media (max-width: 1030px) {
+			display: block;
+		}
+		@media (max-width: 700px) {
+			right: 2px;
+		}
+		svg {
+			width: 30px;
+		}
+		&._active {
+			transform: rotate(360deg);
+			svg {
+				fill: #fff;
+			}
+			@media (max-width: 700px) {
+				right: 10px;
+			}
+		}
+	}
+}

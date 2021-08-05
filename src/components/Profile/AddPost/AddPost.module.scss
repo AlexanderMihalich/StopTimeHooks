@@ -1,0 +1,44 @@
+.content {
+	&__addpost {
+		margin: 0px auto 0px auto;
+		width: 95%;
+		@media (max-width: 700px) {
+			width: 96%;
+		}
+	}
+	&__btn {
+		border-radius: 5px;
+		margin: 15px 0px 0px auto;
+		padding: 8px 42px;
+		background-color: #ab5a77;
+		color: #fff;
+		font-size: 15px;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__textarea {
+		height: 150px;
+	}
+}
+.posts {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 3% 8%;
+		@media (max-width: 700px) {
+			margin: 0px 0px 5% 0px;
+		}
+	}
+	&__ava {
+		img {
+			width: 65px;
+			height: 65px;
+			object-fit: cover;
+			border-radius: 40%;
+			margin: 0px 20px 0px 0px;
+		}
+	}
+	&__text {
+		font-size: 16px;
+	}
+}

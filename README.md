@@ -1,1 +1,1 @@
-https://alexandermihalich.github.io/StopTimeHooks/
+https://alexandermihalich.github.io/StopTimeHooks
